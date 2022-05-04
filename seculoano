@@ -1,0 +1,13 @@
+<?
+
+$ano = 1901;
+
+
+function SECULOANO($ano){
+	return ceil($ano /100);
+
+}
+
+echo "Ano $ano = século ".SECULOANO($ano);
+
+?>
