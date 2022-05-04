@@ -1,0 +1,18 @@
+<?
+
+function PRIMOS($n1,$n2){
+	$result = [];
+
+	for($i=$n1;$i<$n2;$i++){
+		$eprimo = true;
+		for($j=2;$j<$i;$j++){			
+			if (is_int($i/$j)) $eprimo = false;	
+		}			
+		if($eprimo) $result[] = $i;
+	}
+	return $result;
+}
+
+echo implode(',',PRIMOS(1,100));
+
+?>
